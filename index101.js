@@ -79,10 +79,6 @@ app.patch("/edit/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const post = posts.find((element) => element.id === id);
 
-    if (!post) {
-        return res.status(404).json({ message: "Post not found" });
-    }
-
     console.log(req.body.title);
     console.log(req.body.content);
     console.log(req.body.author);
@@ -97,7 +93,7 @@ app.patch("/edit/:id", (req, res) => {
     const index = posts.findIndex((element) => element.id === id);
     posts[index] = updatedPost;
 
-    // Send back the updated post
+
     res.json(updatedPost);
 });
 
