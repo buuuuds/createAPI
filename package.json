@@ -1,7 +1,7 @@
 {
   "name": "shij",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index101.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "superheroes": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.1",
+    "pretty-quick": "^4.0.0"
   }
 }
